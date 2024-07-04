@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clr{
+    clear: both;
+}
+
+
+
+
+
+.menu_bg{
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+}
+
+.menu_bg .menu_content{
+    width: 960px;
+    height: 50px;
+    background-color: rgb(53, 147, 147);
+    margin: 0 auto;
+}
+
+.menu_bg .menu_content .logo{
+    width: 260px;
+    height: 50px;
+    background-color: rgb(32, 93, 93);
+    float: left;
+
+}
+.menu_bg .menu_content .menu_list{
+    width: 700px;
+    height: 50px;
+    background-color: rgb(31, 183, 183);
+    float: left;
+}
+.menu_bg .menu_content .menu_list ul{
+    list-style: none;
+}
+
+
+
+
+.menu_bg .menu_content .menu_list ul li{
+    float: left;
+    position: relative;
+}
+
+
+
+
+.menu_bg .menu_content .menu_list ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 15px;
+    padding: 0 19.9px;
+    text-transform: uppercase;
+
+    background-color: rgb(16, 153, 153);
+    display: block;
+
+    transition: all linear .5s;
+}
+
+.menu_bg .menu_content .menu_list ul li:hover > a{
+    background-color: rgb(118, 240, 240);
+    color: rgb(64, 55, 55);
+    background-color: ;
+}
+
+
+
+.menu_bg .menu_content .menu_list ul li ul{
+    position: absolute;
+    top: 100px;
+    transition: all linear .5s;
+
+    opacity: 0;
+    visibility: hidden;
+
+    /* display: none; */
+    
+}
+.menu_bg .menu_content .menu_list ul li:hover > ul{
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+    /* display: block; */
+}
+
+.menu_bg .menu_content .menu_list ul li ul li{
+    float: none;
+}
+
+.menu_bg .menu_content .menu_list ul li ul li a{
+    white-space: nowrap;
+    background-color: palevioletred;
+}
